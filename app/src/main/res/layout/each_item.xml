@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:id="@+id/cardItem">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/newsImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/news_img1"
+            android:layout_margin="10dp"
+            app:shapeAppearanceOverlay="@style/softCorner">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/NewsHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:paddingStart="10dp"
+            android:text="@string/breaking_news"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
